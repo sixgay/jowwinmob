@@ -37,18 +37,62 @@ function main() {
     Show Menu on Book
     ======================================*/
     $(window).bind('scroll', function() {
+      console.log($(window).scrollTop())
+      var scrollTop = $(window).scrollTop()
+      
+      if(scrollTop > 300) {
+        $()
+      }
+      
       //var navHeight = $(window).height() - 100;
       if ($(window).scrollTop() > 700) {
         $('.navbar-default').addClass('on');
       } else {
         $('.navbar-default').removeClass('on');
       }
+
+
     });
 
     $('body').scrollspy({ 
       target: '.navbar-default',
       offset: 80
     })
+
+    /* 滚动动画 */
+    var wow = new WOW(
+      {
+        mobile:       false
+      }
+    );
+    wow.init();
+
+    /* swiper */
+    var swiper = new Swiper('.swiper-containers', {
+      // spaceBetween: 30,
+      effect: 'fade',
+      // effect : 'cube',
+      // cubeEffect: {
+      //   slideShadows: true,
+      //   shadow: true,
+      //   shadowOffset: 100,
+      //   shadowScale: 0.6
+      // },
+      autoplay: {
+        stopOnLastSlide: true
+      },
+      loop:true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
+    });
+    // swiper.navigation.$nextEl.addClass('hide');
+    // swiper.navigation.$prevEl.addClass('hide');
 
     /* hover */
     $('.advertiser-content').hover(function(){
@@ -58,6 +102,17 @@ function main() {
     },function(){
       var imgSrc = $(this).find('img')[0].src
       imgSrc = imgSrc.replace(/advertisersSelected/ig, 'advertisers')
+      $(this).find('img').attr('src',imgSrc)
+    })
+
+    $('.contact-box').hover(function(){
+      var imgSrc = $(this).find('img')[0].src
+      console.log(imgSrc)
+      imgSrc = imgSrc.replace(/_icon/ig, '_iconSelected')
+      $(this).find('img').attr('src',imgSrc)
+    },function(){
+      var imgSrc = $(this).find('img')[0].src
+      imgSrc = imgSrc.replace(/_iconSelected/ig, '_icon')
       $(this).find('img').attr('src',imgSrc)
     })
 

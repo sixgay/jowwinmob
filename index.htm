@@ -8,68 +8,22 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="author" content="">
-    <link rel="shortcut icon"  href="https://www.lezun.com/index/hpage/img/logo.ico"/>
-
+  <!-- <link rel="shortcut icon"  href="https://www.lezun.com/index/hpage/img/logo.ico"/> -->
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css"  href="./index/hpage/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./static/css/font-awesome.min.css">
   <!--<link rel="stylesheet" type="text/css" href="./index/hpage/css/font-awesome.min.css"/>-->
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="./static/css/swiper.min.css">
+  <!-- Animate -->
+  <link rel="stylesheet" href="./index/hpage/css/animate.css">
+
 <!-- Slider
   ================================================== -->
   <link href="./index/hpage/css/owl.carousel.css" rel="stylesheet" media="screen">
   <link href="./index/hpage/css/owl.theme.css" rel="stylesheet" media="screen">
-  <style>
-    .angle-down{
-      padding: 4px 20px;
-      color: #fff;
-      border: 2px solid #b4b4b4;
-      border-radius: 50%;
-      font-size: 24px;
-      margin-top: 200px;
-      transition: all 0.5s;
-      position: relative;
-    }
-    .angle-down::after{
-      content: '';
-      position: absolute;
-      left: 14px;
-      top: 12px;
-      transform: translateX(-50%);
-      width:12px;
-      height: 12px;
-      border-right: 2px solid #fff;
-      border-bottom: 2px solid #fff;
-      -webkit-transform: rotate(45deg);
-      
-    }
-    .angle-down:hover{
-      background: #fcac45;
-      color: #ffffff;
-      border: 2px solid #fcac45;
-    }
-    .lead{
-      margin-bottom: 200px;
-    }
-    .dot-circle{
-      width: 4px;
-      height: 4px;
-      background-color: #000000;
-      display: inline-block;
-      position: relative;
-      margin-bottom: 4px
-    }
-    .dot-circle:after{
-      content: '';
-      position: absolute;
-      width: 12px;
-      height: 12px;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%,-50%);
-      border: 2px solid #000000;
-      border-radius: 50%;
-    }
-  </style>
+
 <!-- Stylesheet
   ================================================== -->
   <link rel="stylesheet" type="text/css"  href="./index/hpage/css/style.css">
@@ -115,25 +69,54 @@
 <!-- Home Page
   ==========================================-->
   <div id="tf-home" class="text-center">
+    <!-- <div class="container">
+      <p>"Thinking about what customers think, urgency is not anxious", choose us is to choose high quality service</p>
+      <div class="banner-btn">Contact us</div>
+    </div> -->
+    <div class="swiper-containers" style="height:703px">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" style="background-image:url(index/hpage/img/banner.png)">
+            <div class="container">     
+                <h5>Make your business more profitable</h5>
+                <p>"Thinking about what customers think, urgency is not anxious", choose us is to choose high quality service</p>
+                <div class="banner-btn">Contact us</div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white">
+    
+        </div>
+        <!-- Add Arrows -->
+        <!-- <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div> -->
+      </div>
 </div>
 
+  
+    <!-- Wrapper for slides -->
+    <!-- <div class="container"> -->
+      <!-- </div> -->
+    
+
+  
 <!-- About Us Page
   ==========================================-->
   <div id="tf-about">
     <div class="container">
       <div class="about-header">
-        <h4>ABOUNT US</h4>
-        <p>Joywinmob is a fast-growing affiliate network</p>
+        <h4 class="wow fadeInUp">ABOUNT US</h4>
+        <p class="wow fadeInUp"  data-wow-delay=".5s">Joywinmob is a fast-growing affiliate network</p>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="about-text text-left">
+          <div class="wow bounceInLeft about-text text-left"  data-wow-duration="1s">
             <p class="intro-title">Joywinmob is a fast-growing affiliate network。</p>
             <p class="intro-info">joywinmob connects with hundreds of direct mobile content providers and matches their offers with the most appropriate traffic to deliver the best results for our partners.</p>
           </div>
         </div>
         <div class="col-md-6">
-            <img src="./index/hpage/img/aboutUs.png" class="img-responsive">
+            <img class="wow bounceInUp"  src="./index/hpage/img/aboutUs.png" class="img-responsive">
           </div>
       </div>
     </div>
@@ -144,17 +127,17 @@
   <div id="tf-team" class="text-center">
       <div class="container">
       <div class="team-header">
-        <h4>Publishers</h4>
-        <p>Hundreds of competitive world-wide offers with high payouts</p>
+        <h4 class="wow fadeInUp">Publishers</h4>
+        <p class="wow fadeInUp"  data-wow-delay=".5s">Hundreds of competitive world-wide offers with high payouts</p>
       </div>
       <div class="publishers">
           <div class="row">
               <div class="col-md-6">
-                  <img src="./index/hpage/img/publishers1.png" class="img-responsive">
+                  <img class="wow bounceInLeft" data-wow-delay=".2s"  src="./index/hpage/img/publishers1.png" class="img-responsive">
                 </div>
               <div class="col-md-6">
-                <div class="publishers-text text-left">
-                  <span class="number-icon">.01</span>                      
+                <div class="publishers-text text-left wow fadeInUp"  data-wow-duration=".5s" data-wow-delay=".15s">
+                  <span class="number-icon" >.01</span>                      
                   <p class="publishers-title">Offers</p>
                   <p class="publishers-info">More advertisers, massive offer, high price per ad, AM professional, mainly seeking high quality traffic of CPL、CPA、CPI</p>
                 </div>
@@ -162,22 +145,22 @@
             </div>
             <div class="row">
               <div class="col-md-6">
-                <div class="publishers-text text-left">
+                <div class="publishers-text text-left wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".15s">
                   <span class="number-icon">.02</span>                      
                   <p class="publishers-title">Payout</p>
                   <p class="publishers-info">Our platform payment guarantees, ensuring that we can make timely payment, no arrears, and more trustworthy disputes.</p>
                 </div>
               </div>
               <div class="col-md-6">
-                  <img src="./index/hpage/img/publishers2.png" class="img-responsive">
+                  <img class="wow bounceInRight" data-wow-delay=".2s" src="./index/hpage/img/publishers2.png" class="img-responsive">
                 </div>
             </div>
             <div class="row">
               <div class="col-md-6">
-                  <img src="./index/hpage/img/publishers3.png" class="img-responsive">
+                  <img class="wow bounceInLeft" data-wow-delay=".2s" src="./index/hpage/img/publishers3.png" class="img-responsive">
                 </div>
               <div class="col-md-6">
-                <div class="publishers-text text-left">
+                <div class="publishers-text text-left wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".15s">
                   <span class="number-icon">.03</span>                      
                   <p class="publishers-title">Support</p>
                   <p class="publishers-info">Support 7x24 service quality, oprovide you with satisfactory solutions anytime, anywhere</p>
@@ -186,19 +169,21 @@
             </div>
             <div class="row">
               <div class="col-md-6">
-                <div class="publishers-text text-left">
+                <div class="publishers-text text-left wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".15s">
                   <span class="number-icon">.04</span>                      
                   <p class="publishers-title">Postback</p>
                   <p class="publishers-info">Our platform has strong technical support, able to get timely data feedback, let you keep abreast of data dynamics</p>
                 </div>
               </div>
               <div class="col-md-6">
-                  <img src="./index/hpage/img/publishers4.png" class="img-responsive">
+                  <img class="wow bounceInRight" data-wow-delay=".2s" src="./index/hpage/img/publishers4.png" class="img-responsive">
                 </div>
             </div>
       </div>
       <div class="team-footer">
+        <a href="http://ad.joywinmob.com/" target="_blank">
           <div class="team-btn">Become a publisher</div>
+        </a>
         </div>
     </div>
   </div>
@@ -208,21 +193,21 @@
   <div id="tf-services" class="text-center">
     <div class="container">
         <div class="services-header">
-          <h4>Advertisers</h4>
-          <p>Hundreds of advertisers have successfully achieved high traffic</p>
+          <h4 class="wow fadeInUp">Advertisers</h4>
+          <p class="wow fadeInUp"  data-wow-delay=".15s">Hundreds of advertisers have successfully achieved high traffic</p>
         </div>
-        <div class="services-content">
+        <div class="services-content wow fadeInUp" data-wow-offset="10">
           <div class="row">
             <div class="col-md-4 col-sm-6 advertiser">
               <div class="advertiser-content">
-                <img src="./index/hpage/img/icon/advertisers1@2x.png" alt="">
+                <img src="./index/hpage/img/icon/advertisers1@2x.png"  alt="">
                 <p class="advertiser-title">Detailed Reporting</p>
                 <p class="advertiser-info">In-depth reporting and statistics enable you to quickly make decisions that maximize your ROI.</p>
               </div>
             </div>
             <div class="col-md-4 col-sm-6 advertiser">
               <div class="advertiser-content">
-                <img src="./index/hpage/img/icon/advertisers2@2x.png" alt="">
+                <img src="./index/hpage/img/icon/advertisers2@2x.png"  alt="">
                 <p class="advertiser-title">Account Management</p>
                 <p class="advertiser-info">Our ad team will work with you to optimize your campaigns for volume and ROI.</p>
               </div>
@@ -260,7 +245,9 @@
             </div>
         </div>
         <div class="serivces-footer">
-          <div class="serivces-btn">Become a advertiser</div>
+          <a href="http://ad.joywinmob.com/" target="_blank">
+            <div class="serivces-btn">Become a advertiser</div>
+          </a>
         </div>
       </div>
     </div>
@@ -268,15 +255,82 @@
 <!-- Clients Section
   ==========================================-->
   <div id="tf-clients" class="text-center">
-      <div class="container">
+      <div class="container-fluid">
         <div class="clients-header">
           <h4>NEWS</h4>
           <p>Corporate news and big events</p>
         </div>
         <div class="news">
-          <div class="news-content">
+          <!-- <div class="news-content">
 
+          </div> -->
+          <div class="banner">
+            <div class="swiper">
+                <div class="current-swiper swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide news-content">
+                      <div class="title">News Headlines</div>
+                      <div class="time">2018-12-08</div>
+                      <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                    </div>
+                    <div class="swiper-slide news-content">
+                      <div class="title">News Headlines</div>
+                      <div class="time">2018-12-08</div>
+                      <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                    </div>
+                    <div class="swiper-slide news-content">
+                      <div class="title">News Headlines</div>
+                      <div class="time">2018-12-08</div>
+                      <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <div class="nocurrent-swiper left-swiper swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide news-content">
+                          <div class="title">News Headlines</div>
+                          <div class="time">2018-12-08</div>
+                          <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                        </div>
+                        <div class="swiper-slide news-content">
+                            <div class="title">News Headlines</div>
+                            <div class="time">2018-12-08</div>
+                            <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                          </div>
+                          <div class="swiper-slide news-content">
+                              <div class="title">News Headlines</div>
+                              <div class="time">2018-12-08</div>
+                              <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                            </div>
+                  </div>
+                </div>
+                
+                <div class="nocurrent-swiper right-swiper swiper-container">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide news-content">
+                        <div class="title">News Headlines</div>
+                        <div class="time">2018-12-08</div>
+                        <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                      </div>
+                      <div class="swiper-slide news-content">
+                        <div class="title">News Headlines</div>
+                        <div class="time">2018-12-08</div>
+                        <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                      </div>
+                      <div class="swiper-slide news-content">
+                        <div class="title">News Headlines</div>
+                        <div class="time">2018-12-08</div>
+                        <p class="detail">On July 9, 2018, Vanke Logistics Development Co., Ltd. (hereinafter referred to as Vanke Logistics) and Taikoo Industrial Co., Ltd. (hereinafter referred to as Taikoo Industrial Co., Ltd.) held a signing ceremony at the Dameisha Vanke Center in Shenzhen. The chairman of Taikoo Co., Ltd. Shi Minglun and Vanke Group Chairman of the Board of Directors Yu Liang, Chairman of Taikoo (China) Co., Ltd. Zhu Guoliang, Executive Vice President of Vanke Group, Chief Operating Officer Zhang Xu, Director of Corporate Development of Taikoo Co., Ltd. Yan Mingyan, General Manager of Vanke Logistics Development Co., Ltd. Jiang Yan and other guests witnessed this Second signing.</p>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
 
       </div>
@@ -287,16 +341,16 @@
   <div id="tf-works">
     <div class="container"> <!-- Container -->
       <div class="works-header text-center">
-        <h4>CONTACT US</h4>
-        <p>We look forward to your joining</p>
+        <h4 class="wow fadeInUp">CONTACT US</h4>
+        <p class="wow fadeInUp"  data-wow-delay=".15s">We look forward to your joining</p>
       </div>
-      <div class="contact">
+      <div class="contact wow fadeInUp" >
         <div class="row">
             <div class="col-md-4 col-sm-6 ">
               <div class="contact-box">
                 <div class="media">
                   <div class="media-left">
-                      <img class="media-object" src="./index/hpage/img/icon/email@2x.png" alt="...">
+                      <img class="media-object" src="./index/hpage/img/icon/email_icon@2x.png" alt="...">
                   </div>
                   <div class="media-body">
                     <p class="contact-title">For publishers</p>
@@ -309,7 +363,7 @@
               <div class="contact-box">
                 <div class="media">
                   <div class="media-left">
-                    <img class="media-object" src="./index/hpage/img/icon/email@2x.png" alt="...">
+                    <img class="media-object" src="./index/hpage/img/icon/email_icon@2x.png" alt="...">
                   </div>
                   <div class="media-body">
                     <p class="contact-title">For advertisers</p>
@@ -322,7 +376,7 @@
               <div class="contact-box">
                 <div class="media">
                   <div class="media-left">
-                    <img class="media-object" src="./index/hpage/img/icon/email@2x.png" alt="...">
+                    <img class="media-object" src="./index/hpage/img/icon/tel_icon@2x.png" alt="...">
                   </div>
                   <div class="media-body">
                     <p class="contact-title">Tel</p>
@@ -334,10 +388,10 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-sm-6 ">
-              <div class="contact-box">
+              <div class="contact-box contact-left">
                 <div class="media">
                   <div class="media-left">
-                      <img class="media-object" src="./index/hpage/img/icon/email@2x.png" alt="...">
+                      <img class="media-object" src="./index/hpage/img/icon/M_icon@2x.png" alt="...">
                   </div>
                   <div class="media-body">
                     <p class="contact-title">Meet us at</p>
@@ -350,7 +404,7 @@
               <div class="contact-box">
                 <div class="media">
                   <div class="media-left">
-                    <img class="media-object" src="./index/hpage/img/icon/email@2x.png" alt="...">
+                    <img class="media-object" src="./index/hpage/img/icon/address_icon@2x.png" alt="...">
                   </div>
                   <div class="media-body">
                     <p class="contact-title">Location</p>
@@ -360,38 +414,34 @@
               </div>
             </div>
         </div>
-      </div>
-    </div>
-  </div>
-
-<!-- Testimonials Section
-  ==========================================-->
-  <div id="tf-testimonials" class="text-center">
-    <div class="overlay">
-      <div class="container">
-        <div class="section-title center">
-          <h2>关于我们</h2>
-          <div class="line">
-            <hr>
-          </div>
+        <div class="contact-map">
+          <img src="./index/hpage/img/map_1.jpg" class="img-responsive" alt="">
+          <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C40.718217,-73.998284&key=YOUR_API_KEY" class="img-responsive" alt=""> -->
+          <p class="text-center map-text">OFFICE ADDRESS: Unit 4D Floor 4 Building T2-A Shenzhen Software Park NanShan District Shenzhen China</p>
         </div>
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <div id="testimonial" class="owl-carousel owl-theme">
-              <div class="item">
-                <h5>XXX团队在为不同的行业提供专业的广告服务，依靠多年来的不懈努力，及精诚团结的管理团队，专业水准的技术人员，熟悉互联网以及广告流程的业务人员，在 “ 传播诚信，以义制利 ” 的经营理念与宗旨下，走在了国内IT行业的前沿。</h5>
-                <p><strong>XXX.</strong>cn</p>
-              </div>
-
-              <div class="item">
-                <h5>  XXX拥有一个高素质的技术团队，团队以诚优网络为核心凝聚了一批行业内年轻、有活力的成员。他们在各自的阵地上有着出色的表现以及丰富的实战经验，更具魅力的是他们的创造力和奉献精神。我们团队的成员都是设计界的精英，受过高等的艺术深造，经过多重工作实战磨练。并拥有与国内外各大企业成功的合作经验。是优秀的网络营销与平面设计后起之秀，能够做到迅速启动您的目标客户群体，大幅度促进产品的销量和速度。</h5>
-                <p><strong>XXX.</strong>cn</p>
-              </div>
-
-              <div class="item">
-                <h5>凭借长期成功运营大型网站的经历，诚优网络积聚了良好的行业人脉和丰富的互联网媒体资源，此外还与百度，google，腾讯等多家互联网行业领跑者结成了紧密的合作关系。</h5>
-                <p><strong>XXX.</strong>cn</p>
-              </div>
+        <div class="contact-send">
+          <p class="contact-send-header">Get in Touch</p>
+          <div class="row">
+            <div class="col-md-5">
+              <img src="./index/hpage/img/send.png" class="img-responsive" alt="">
+            </div>
+            <div class="col-md-7 contact-from">
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <div class="col-sm-5" style="padding-left:0px">
+                    <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
+                  </div>
+                  <div class="col-sm-5" style="padding-right:0px">
+                    <input type="email" class="form-control" id="inputPassword3" placeholder="Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea class="col-sm-10" rows="6"></textarea>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-default">Send</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -399,24 +449,52 @@
     </div>
   </div>
 
+<!-- Testimonials Section
+  ==========================================-->
+  <div id="tf-testimonials" class="text-center">
+    <div class="container">
+      <div class="testimonials-header">
+        <h4>COOPERATIVE PARTNER</h4>
+        <p>Resource sharing, cooperation and win-win</p>
+      </div>
+      <div class="row">
+        <div class="cpmpany-partner col-md-2">
+          <p class="text-center">Waiting</p>
+        </div>
+        <div class="cpmpany-partner col-md-2">
+          <p class="text-center">Waiting</p>
+          </div>
+        <div class="cpmpany-partner col-md-2">
+          <p class="text-center">Waiting</p>
+        </div>
+        <div class="cpmpany-partner col-md-2">
+          <p class="text-center">Waiting</p>
+        </div>
+        <div class="cpmpany-partner col-md-2">
+          <p class="text-center">Waiting</p>
+        </div>
+        <div class="cpmpany-partner col-md-2">
+          <p class="text-center">Waiting</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 <!-- Contact Section
   ==========================================-->
-      <nav id="footer">
+      <div id="footer">
         <div class="container">
-          <div class="pull-left fnav">
-            <p>Copyright @ 2018 www.XXX.cn All rights reserved. XXX  粤ICP备00000000号-1</p>
-          </div>
-          <div class="pull-right fnav">
-            <ul class="footer-social" style="margin:0">
-              <li><a href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=www.lezun.com&menu=no" target="_blank">广告主：123456<i class="fa fa-facebook" style="display:none"></i></a></li>
-              <li><a href="http://wpa.qq.com/msgrd?v=3&uin=123456&site=www.lezun.com&menu=no" target="_blank">渠道商：123456<i class="fa fa-facebook" style="display:none"></i></a></li>            
-            </ul>
+          <div class="text-center">
+            <p>@Copyright 2018 JoyWinMob. All Rights Reserved.</p>
           </div>
         </div>
-      </nav>
+      </div>
       <script src="https://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
       <script type="text/javascript" src="./index/hpage/js/bootstrap.js"></script>
+      <script src="./index/hpage/js/wow.min.js"></script>
       <!-- <script type="text/javascript" src="./index/hpage/js/SmoothScroll.js"></script> -->
+      <script src="./static/js/swiper.min.js"></script>
+      <script src="./index/hpage/js/swiper3D.js"></script>
       <script type="text/javascript" src="./index/hpage/js/jquery.isotope.js"></script>
       <script src="./index/hpage/js/owl.carousel.js"></script>
       <script type="text/javascript" src="./index/hpage/js/main.js"></script>
