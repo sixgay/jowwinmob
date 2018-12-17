@@ -1,9 +1,3 @@
-// Hello.
-//
-// This is The Scripts used for ___________ Theme
-//
-//
-
 function main() {
 
   (function () {
@@ -62,22 +56,14 @@ function main() {
     /* 滚动动画 */
     var wow = new WOW(
       {
-        mobile:       false
+        // mobile: false
       }
     );
     wow.init();
 
     /* swiper */
     var swiper = new Swiper('.swiper-containers', {
-      // spaceBetween: 30,
       effect: 'fade',
-      // effect : 'cube',
-      // cubeEffect: {
-      //   slideShadows: true,
-      //   shadow: true,
-      //   shadowOffset: 100,
-      //   shadowScale: 0.6
-      // },
       autoplay: {
         stopOnLastSlide: true
       },
@@ -86,13 +72,24 @@ function main() {
         el: '.swiper-pagination',
         clickable: true,
       },
-      // navigation: {
-      //   nextEl: '.swiper-button-next',
-      //   prevEl: '.swiper-button-prev',
-      // },
     });
-    // swiper.navigation.$nextEl.addClass('hide');
-    // swiper.navigation.$prevEl.addClass('hide');
+
+    /* speed */
+    var speed=30; //数字越大速度越慢
+    var tab=document.getElementById("demo");
+    var tab1=document.getElementById("demo1");
+    var tab2=document.getElementById("demo2");
+    tab2.innerHTML=tab1.innerHTML;
+    function Marquee(){
+    if(tab2.offsetWidth-tab.scrollLeft<=0)
+    tab.scrollLeft-=tab1.offsetWidth
+    else{
+    tab.scrollLeft++;
+    }
+    }
+    var MyMar=setInterval(Marquee,speed);
+    tab.onmouseover=function() {clearInterval(MyMar)};
+    tab.onmouseout=function() {MyMar=setInterval(Marquee,speed)};
 
     /* hover */
     $('.advertiser-content').hover(function(){
@@ -115,102 +112,9 @@ function main() {
       imgSrc = imgSrc.replace(/_iconSelected/ig, '_icon')
       $(this).find('img').attr('src',imgSrc)
     })
-
-    $(document).ready(function() {
-     $("#team").owlCarousel({
-
-  	      navigation : false, // Show next and prev buttons
-  	      slideSpeed : 300,
-  	      paginationSpeed : 400,
-  	      autoHeight : true,
-  	      itemsCustom : [
-          [0, 1],
-          [450, 2],
-          [600, 2],
-          [700, 2],
-          [1000, 4],
-          [1200, 4],
-          [1400, 4],
-          [1600, 4]
-          ],
-        });
-
-     $("#clients").owlCarousel({
-
-  	      navigation : false, // Show next and prev buttons
-  	      slideSpeed : 300,
-  	      paginationSpeed : 400,
-  	      autoHeight : true,
-  	      itemsCustom : [
-          [0, 1],
-          [450, 2],
-          [600, 2],
-          [700, 2],
-          [1000, 4],
-          [1200, 5],
-          [1400, 5],
-          [1600, 5]
-          ],
-        });
-
-     $("#testimonial").owlCarousel({
-        navigation : false, // Show next and prev buttons
-        slideSpeed : 300,
-        paginationSpeed : 400,
-        singleItem:true
-      });
-
-   });
-
-  	/*====================================
-    Portfolio Isotope Filter
-    ======================================*/
-    $(window).load(function() {
-      var $container = $('#lightbox');
-      $container.isotope({
-        filter: '*',
-        animationOptions: {
-          duration: 750,
-          easing: 'linear',
-          queue: false
-        }
-      });
-      $('.cat a').click(function() {
-        $('.cat .active').removeClass('active');
-        $(this).addClass('active');
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-          filter: selector,
-          animationOptions: {
-            duration: 750,
-            easing: 'linear',
-            queue: false
-          }
-        });
-        return false;
-      });
-
-    });
-
-
-
   }());
-
-
 }
 main();
 
-
-$(function(){
-    //刷新验证码
-    var verifyimg = $(".verifyimg").attr("src");
-    $(".reloadverify").click(function(){
-        if( verifyimg.indexOf('?')>0){
-            $(".verifyimg").attr("src", verifyimg+'&random='+Math.random());
-        }else{
-            $(".verifyimg").attr("src", verifyimg.replace(/\?.*$/,'')+'?'+Math.random());
-        }
-    });
-});
 
 

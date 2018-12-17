@@ -13,7 +13,7 @@ html {
 }
 
 ::selection {
-	background: #fcac45;
+	background: #799BFD;
 	color: #fff;
 	text-shadow: none;
 }
@@ -160,8 +160,8 @@ ol {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-	background-color: #FCAC45;
-	border-color: #FCAC45;
+	background-color: #799BFD;
+	border-color: #799BFD;
 }
 
 .navbar-default .navbar-toggle:hover>.icon-bar {
@@ -173,7 +173,7 @@ ol {
 #tf-home {
 	background: url("../img/banner.png");
 	background-size: cover;
-	background-position: center;
+	background-position: left top;
 	/* background-attachment: fixed; */
 	background-repeat: no-repeat;
 	color: #cfcfcf;
@@ -289,6 +289,8 @@ a.fa.fa-angle-down:hover {
 	bottom: 0;
 	transform: translateX(-50%);
 }
+
+
 
 #tf-about .about-header p,
 #tf-team .team-header p,
@@ -431,7 +433,7 @@ img.img-circle.team-img {
 	padding: 80px 0;
 }
 
-.services-content .row {
+.services-content .advertiser {
 	margin-top: 30px;
 }
 
@@ -442,6 +444,7 @@ img.img-circle.team-img {
 .serivces-footer .serivces-btn,
 .team-footer .team-btn,
 #tf-home .banner-btn {
+	display: block;
 	margin: 20px auto ;
 	max-width: 460px;
 	height: 80px;
@@ -530,7 +533,7 @@ img.img-circle.team-img {
 #tf-clients {
 	padding-bottom: 80px;
 	padding-top: 40px;
-	background: url("../../hpage/img/news.png") ;
+	background: url("../img/news.png") ;
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -546,6 +549,10 @@ img.img-circle.team-img {
 	background-color: #fff;
 }
 
+.banner .current-swiper {
+	background-color: #fff;
+}
+
 #clients .item {
 	padding: 0;
 	margin: 35px;
@@ -553,26 +560,29 @@ img.img-circle.team-img {
 	text-align: center;
 }
 
-.news .news-content {
+ .news-content {
 	max-width: 826px;
 	/* height: 408px; */
 	/* width: auto !important; */
-	background-color: #fff;
+	background-color: #fff !important;
 	/* border-radius: 20px; */
 	margin: auto;
 }
 
 .contact .contact-box {
-	margin-top: 10px;
+	/* margin-top: 10px; */
+	margin: 20px auto 0px;	
 	transition: all .5s;
 }
 
-.contact .contact-left {
-	float: right;
+.contact .contact-center {
+	/* float: right; */
+	/* margin: auto; */
+
 }
 
 .contact  .row {
-	margin-top: 20px;
+	/* margin-top: 20px; */
 }
 
 .contact .contact-box:hover {
@@ -603,6 +613,10 @@ img.img-circle.team-img {
 	line-height: 35px;
 }
 
+.contact-send textarea {
+	width: 100%;
+}
+
 .contact .contact-map {
 	/* max-width: 1112px;  */
 	margin-top: 55px;
@@ -616,7 +630,7 @@ img.img-circle.team-img {
 	color: #8D9FC7;
 	font-size: 18px;
 	margin-top: 24px;
-	margin-bottom: 129px;
+	margin-bottom: 60px;
 }
 
 .contact-send .contact-send-header {
@@ -627,6 +641,14 @@ img.img-circle.team-img {
 
 .contact-send .contact-from {
 	margin-top: 20px;
+}
+
+.contact-send .contact-email {
+	padding-left: 0
+}
+
+.contact-send .contact-password {
+	padding-right: 0
 }
 
 .contact-send input,
@@ -650,7 +672,7 @@ img.img-circle.team-img {
 ==============================*/
 
 #tf-works {
-	padding: 80px 0;
+	padding: 80px 0 0px;
 }
 
 .categories {
@@ -800,10 +822,6 @@ ol.type li a.active {
 
 /* Testimonials Section */
 
-#tf-testimonials {
-}
-
-
 #testimonial {
 	padding: 30px 0;
 }
@@ -888,6 +906,13 @@ input.btn.tf-btn.btn-default {
 	outline-offset: none;
 }
 
+#allmap {
+	margin: auto;
+	max-height: 401px;
+	height: 401px;
+	max-width: 1112px;
+}
+
 /* Footer */
 
 #footer {
@@ -895,7 +920,7 @@ input.btn.tf-btn.btn-default {
 	color: #ffffff;
 	height: 428px;
 	width: auto;
-	background: url('../img/copyright.png')  no-repeat bottom center / 100% 100%;
+	/* background: url('../img/copyright.png')  no-repeat bottom center / 100% 100%; */
 	position: relative;
 }
 
@@ -910,8 +935,43 @@ ul.footer-social li {
 	margin-top: 10px;
 	position: absolute;
 	bottom: 10px;
+	margin: auto;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+	#tf-works .form-group {
+		text-align: center;
+	}
+	#footer p {
+		font-size: 12px;
+	}
+	#tf-testimonials h4::after {
+		bottom: -20px;
+	}
+	#tf-testimonials p {
+		margin-top: 20px;
+		font-size: 16px !important;
+	}
+	#footer .testimonials-header p {
+		font-size: 12px !important;
+	}
+	#footer {
+		height: 128px;
+	}
+	.current-swiper {
+		height: auto !important;
+	}
+	 .news-content .detail {
+		padding: 10px;
+	}
+	.contact-send .contact-email {
+		padding-left: 15px;
+	}
+	.contact-send .contact-password {
+		padding-right: 15px;
+	}
 }
 
 .cpmpany-partner {
@@ -980,6 +1040,8 @@ ul.footer-social li {
 	z-index:1;
 }
 .nocurrent-swiper {
+	/* width: 10px; */
+	width: 375px;
 	max-width:479px;
 	height:273px;
 	border-radius:8px;
@@ -992,8 +1054,14 @@ ul.footer-social li {
 	left:0;
 	width:100%;
 	height:100%;
-	background:rgba(237,240,240,0.9);
+	background:rgba(237,240,240,0.6);
 	z-index:99;
+}
+
+.img-responsive {
+	display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .slide1 {
@@ -1051,4 +1119,86 @@ ul.footer-social li {
 	width: 81px;
 	background-size:auto;
 	background-image:url('../img/turnRight.png');
+}
+
+#demo {
+	padding-top: 30px;
+	background: #FFF;
+	overflow:hidden;
+	
+	width: 100%;
+	text-align: center;
+	padding: o,auto;
+}
+#demo img {
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+#indemo {
+	float: left;
+	width: 800%;
+}
+#demo1 {
+	float: left;
+}
+#demo a {
+	position: relative;
+	display: inline-block;
+	color: #fff;
+	margin-right: 30px;
+	width: 160px;
+	height: 60px;
+	background-color: #edf6ff;
+	border: 1px solid #d6dcf1;
+}
+#demo2 {
+	float: left;
+}
+
+
+#footer {
+    position: relative;
+    align-items: center;
+    min-height: 16vh;
+    background-color: #506eea;
+	overflow: hidden;}
+	
+	#footer:before, #footer:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        min-width: 300vw;
+        min-height: 300vw;
+        background-color: #fff;
+        animation-name: rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+ 
+    #footer:before {
+        bottom: 15vh;
+        border-radius: 45%;
+        animation-duration: 10s;
+    }
+ 
+    #footer:after {
+        bottom: 12vh;
+        opacity: .5;
+        border-radius: 47%;
+        animation-duration: 10s;
+    }
+ 
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, 0) rotateZ(0deg);
+    }
+    50% {
+        transform: translate(-50%, -2%) rotateZ(180deg);
+    }
+    100% {
+        transform: translate(-50%, 0%) rotateZ(360deg);
+    }
 }
